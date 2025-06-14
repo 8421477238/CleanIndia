@@ -75,7 +75,7 @@ export default function RewardsPage() {
           toast.error('Insufficient balance to redeem this reward')
           return
         }
-
+//hello
         // Update database
         await redeemReward(user.id, rewardId);
         
