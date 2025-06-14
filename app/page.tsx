@@ -1,3 +1,5 @@
+'use client';
+
 import {Leaf, Recycle,Users,Coins,MapPin} from "lucide-react";
 import {Button} from "@/components/ui/button";
 function AnimatedGlobe() {
@@ -46,9 +48,14 @@ export default function Home() {
         <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed mb-8">
           Join our community in making waste management more effectively.
         </p>
-        <Button className="bg-purple-600 hover:bg-purple-700 text-white text-lg  py-6 px-10 rounded-full">
-            Report Waste
-        </Button>
+        <Button
+  className="bg-purple-600 hover:bg-purple-700 text-white text-lg py-6 px-10 rounded-full"
+  onClick={() => {
+    window.location.href = '/report';
+  }}
+>
+  Report Waste
+</Button>
       </section>
       <section className="grid md:grid-cols-3 gap-10 mb-20">
         <FeatureCard
